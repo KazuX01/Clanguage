@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+#define BLANK ' '
+
+/**/
+
+main()
+{
+	int c;
+	c = getchar()
+	while (c != EOF){
+		if (c != BLANK) {
+			putchar(c);
+			c = getchar();
+		}
+		if (c == BLANK) {
+			while (c != BLANK) c = getchar();
+			putchar(BLANK);
+		}
+	}
+}
